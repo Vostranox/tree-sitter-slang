@@ -1083,3 +1083,136 @@ Fancy generics
       (comment)
       (parameter_list))
     (compound_statement)))
+
+================================================================================
+Visibility modifiers
+================================================================================
+
+public void f() {}
+
+internal struct T {
+  internal int d;
+  private int g;
+}
+
+--------------------------------------------------------------------------------
+
+(translation_unit
+  (function_definition
+    (visibility_modifier)
+    (primitive_type)
+    (function_declarator
+      (identifier)
+      (parameter_list))
+    (compound_statement))
+  (visibility_modifier)
+  (struct_specifier
+    (type_identifier)
+    (field_declaration_list
+      (field_declaration
+        (visibility_modifier)
+        (primitive_type)
+        (field_identifier))
+      (field_declaration
+        (visibility_modifier)
+        (primitive_type)
+        (field_identifier)))))
+
+================================================================================
+Stacked where clauses with type equality
+================================================================================
+
+void f<T>(T x)
+    where T : IFloat
+    where T.Differential == T
+{}
+
+--------------------------------------------------------------------------------
+
+(translation_unit
+  (function_definition
+    (primitive_type)
+    (function_declarator
+      (template_function
+        (identifier)
+        (template_argument_list
+          (type_descriptor
+            (type_identifier))))
+      (parameter_list
+        (parameter_declaration
+          (type_identifier)
+          (identifier)))
+      (where_clause
+        (type_descriptor
+          (type_identifier))
+        (interface_requirements
+          (identifier)))
+      (where_clause
+        (type_descriptor
+          (associatedtype_specifier
+            (type_identifier)
+            (type_identifier)))
+        (type_descriptor
+          (type_identifier))))
+    (compound_statement)))
+
+================================================================================
+Where clause with generic constraint
+================================================================================
+
+void f<U, InputArray>(InputArray a)
+    where InputArray : IArrayAccessor<U>
+{}
+
+--------------------------------------------------------------------------------
+
+(translation_unit
+  (function_definition
+    (primitive_type)
+    (function_declarator
+      (template_function
+        (identifier)
+        (template_argument_list
+          (type_descriptor
+            (type_identifier))
+          (type_descriptor
+            (type_identifier))))
+      (parameter_list
+        (parameter_declaration
+          (type_identifier)
+          (identifier)))
+      (where_clause
+        (type_descriptor
+          (type_identifier))
+        (interface_requirements
+          (template_type
+            (type_identifier)
+            (template_argument_list
+              (type_descriptor
+                (type_identifier)))))))
+    (compound_statement)))
+
+================================================================================
+Cpp-style generic value parameters
+================================================================================
+
+void f<int N, T>(T x) {}
+
+--------------------------------------------------------------------------------
+
+(translation_unit
+  (function_definition
+    (primitive_type)
+    (function_declarator
+      (template_function
+        (identifier)
+        (template_argument_list
+          (primitive_type)
+          (identifier)
+          (type_descriptor
+            (type_identifier))))
+      (parameter_list
+        (parameter_declaration
+          (type_identifier)
+          (identifier))))
+    (compound_statement)))

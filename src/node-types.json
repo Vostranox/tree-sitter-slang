@@ -921,7 +921,15 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -1055,6 +1063,10 @@
       "types": [
         {
           "type": "attribute_declaration",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
           "named": true
         },
         {
@@ -1770,6 +1782,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "linkage_specification",
           "named": true
         },
@@ -1838,7 +1854,15 @@
           "named": true
         },
         {
+          "type": "typealias_declaration",
+          "named": true
+        },
+        {
           "type": "using_declaration",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -2230,6 +2254,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "ms_declspec_modifier",
           "named": true
         },
@@ -2243,6 +2271,10 @@
         },
         {
           "type": "type_qualifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -2270,6 +2302,10 @@
         },
         {
           "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
           "named": true
         },
         {
@@ -2333,7 +2369,15 @@
           "named": true
         },
         {
+          "type": "typealias_declaration",
+          "named": true
+        },
+        {
           "type": "using_declaration",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -2656,6 +2700,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "linkage_specification",
           "named": true
         },
@@ -2716,7 +2764,15 @@
           "named": true
         },
         {
+          "type": "typealias_declaration",
+          "named": true
+        },
+        {
           "type": "using_declaration",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -2876,6 +2932,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "ms_declspec_modifier",
           "named": true
         },
@@ -2889,6 +2949,10 @@
         },
         {
           "type": "type_qualifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -2915,6 +2979,10 @@
           "named": true
         },
         {
+          "type": "attribute_declaration",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -2928,6 +2996,10 @@
         },
         {
           "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
           "named": true
         },
         {
@@ -2972,6 +3044,10 @@
         },
         {
           "type": "type_definition",
+          "named": true
+        },
+        {
+          "type": "typealias_declaration",
           "named": true
         },
         {
@@ -3366,6 +3442,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "ms_declspec_modifier",
           "named": true
         },
@@ -3379,6 +3459,10 @@
         },
         {
           "type": "type_qualifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -3681,6 +3765,10 @@
         {
           "type": "type_qualifier",
           "named": true
+        },
+        {
+          "type": "visibility_modifier",
+          "named": true
         }
       ]
     }
@@ -3953,7 +4041,7 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
@@ -3962,6 +4050,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "if_statement",
@@ -4087,7 +4180,15 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "parameter_list",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -4229,6 +4330,10 @@
       "types": [
         {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "template_type",
           "named": true
         }
       ]
@@ -4917,6 +5022,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "ms_declspec_modifier",
           "named": true
         },
@@ -4930,6 +5039,10 @@
         },
         {
           "type": "type_qualifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -5002,6 +5115,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "ms_declspec_modifier",
           "named": true
         },
@@ -5015,6 +5132,10 @@
         },
         {
           "type": "type_qualifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -5088,6 +5209,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "ms_declspec_modifier",
           "named": true
         },
@@ -5105,6 +5230,10 @@
         },
         {
           "type": "type_qualifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -5478,6 +5607,10 @@
           "named": true
         },
         {
+          "type": "attribute_declaration",
+          "named": true
+        },
+        {
           "type": "concept_definition",
           "named": true
         },
@@ -5499,6 +5632,10 @@
         },
         {
           "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
           "named": true
         },
         {
@@ -5574,7 +5711,15 @@
           "named": true
         },
         {
+          "type": "typealias_declaration",
+          "named": true
+        },
+        {
           "type": "using_declaration",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -5630,6 +5775,10 @@
           "named": true
         },
         {
+          "type": "attribute_declaration",
+          "named": true
+        },
+        {
           "type": "concept_definition",
           "named": true
         },
@@ -5651,6 +5800,10 @@
         },
         {
           "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
           "named": true
         },
         {
@@ -5726,7 +5879,15 @@
           "named": true
         },
         {
+          "type": "typealias_declaration",
+          "named": true
+        },
+        {
           "type": "using_declaration",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -5753,6 +5914,10 @@
           "named": true
         },
         {
+          "type": "attribute_declaration",
+          "named": true
+        },
+        {
           "type": "concept_definition",
           "named": true
         },
@@ -5774,6 +5939,10 @@
         },
         {
           "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
           "named": true
         },
         {
@@ -5849,7 +6018,15 @@
           "named": true
         },
         {
+          "type": "typealias_declaration",
+          "named": true
+        },
+        {
           "type": "using_declaration",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -5969,6 +6146,10 @@
           "named": true
         },
         {
+          "type": "attribute_declaration",
+          "named": true
+        },
+        {
           "type": "concept_definition",
           "named": true
         },
@@ -5990,6 +6171,10 @@
         },
         {
           "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
           "named": true
         },
         {
@@ -6065,7 +6250,15 @@
           "named": true
         },
         {
+          "type": "typealias_declaration",
+          "named": true
+        },
+        {
           "type": "using_declaration",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -6121,6 +6314,10 @@
           "named": true
         },
         {
+          "type": "attribute_declaration",
+          "named": true
+        },
+        {
           "type": "concept_definition",
           "named": true
         },
@@ -6142,6 +6339,10 @@
         },
         {
           "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
           "named": true
         },
         {
@@ -6217,7 +6418,15 @@
           "named": true
         },
         {
+          "type": "typealias_declaration",
+          "named": true
+        },
+        {
           "type": "using_declaration",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -6284,11 +6493,19 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "identifier",
           "named": true
         },
         {
           "type": "type_descriptor",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -6299,11 +6516,19 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
           "type": "compound_statement",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -6314,11 +6539,19 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
           "type": "compound_statement",
+          "named": true
+        },
+        {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -6930,11 +7163,19 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "parameter_list",
           "named": true
         },
         {
           "type": "trailing_return_type",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -7050,7 +7291,23 @@
           "named": true
         },
         {
+          "type": "primitive_type",
+          "named": true
+        },
+        {
+          "type": "sized_type_specifier",
+          "named": true
+        },
+        {
+          "type": "template_type",
+          "named": true
+        },
+        {
           "type": "type_descriptor",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
           "named": true
         }
       ]
@@ -7096,6 +7353,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "requires_clause",
           "named": true
         },
@@ -7105,6 +7366,10 @@
         },
         {
           "type": "type_specifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -7174,6 +7439,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "ms_declspec_modifier",
           "named": true
         },
@@ -7187,6 +7456,10 @@
         },
         {
           "type": "type_qualifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -7448,6 +7721,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "if_statement",
           "named": true
         },
@@ -7544,7 +7821,15 @@
           "named": true
         },
         {
+          "type": "typealias_declaration",
+          "named": true
+        },
+        {
           "type": "using_declaration",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         },
         {
@@ -7742,6 +8027,54 @@
         },
         {
           "type": "type_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "typealias_declaration",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "template_type",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "type_descriptor",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
+          "named": true
+        },
+        {
+          "type": "where_clause",
           "named": true
         }
       ]
@@ -8006,6 +8339,10 @@
           "named": true
         },
         {
+          "type": "hlsl_attribute",
+          "named": true
+        },
+        {
           "type": "ms_declspec_modifier",
           "named": true
         },
@@ -8019,6 +8356,10 @@
         },
         {
           "type": "type_qualifier",
+          "named": true
+        },
+        {
+          "type": "visibility_modifier",
           "named": true
         }
       ]
@@ -8041,6 +8382,11 @@
   },
   {
     "type": "virtual_specifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "visibility_modifier",
     "named": true,
     "fields": {}
   },
@@ -8727,10 +9073,6 @@
     "named": false
   },
   {
-    "type": "identifier",
-    "named": true
-  },
-  {
     "type": "if",
     "named": false
   },
@@ -8752,6 +9094,10 @@
   },
   {
     "type": "interface",
+    "named": false
+  },
+  {
+    "type": "internal",
     "named": false
   },
   {
@@ -9029,6 +9375,10 @@
   {
     "type": "type_identifier",
     "named": true
+  },
+  {
+    "type": "typealias",
+    "named": false
   },
   {
     "type": "typedef",
